@@ -24,11 +24,11 @@
         <div class="col-md-6">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Identity</h3>
+                    <h3 class="box-title">Profile</h3>
                 </div>
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="email" class="control-label">Email</label>
+                        <label for="email" class="control-label">Email Address</label>
                         <div>
                             <input type="email" name="email" value="{{ $user->email }}" class="form-control form-autocomplete-stop">
                         </div>
@@ -40,13 +40,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="registered" class="control-label">Client First Name</label>
+                        <label for="registered" class="control-label">First Name</label>
                         <div>
                             <input type="text" name="name_first" value="{{ $user->name_first }}" class="form-control form-autocomplete-stop">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="registered" class="control-label">Client Last Name</label>
+                        <label for="registered" class="control-label">Last Name</label>
                         <div>
                             <input type="text" name="name_last" value="{{ $user->name_last }}" class="form-control form-autocomplete-stop">
                         </div>
@@ -107,6 +107,19 @@
             </div>
         </div>
     </form>
+
+    <div class="col-md-6">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Other</h3>
+            </div>
+            <div class="box-body">
+                Created: <code>@datetimeHuman($user->created_at)</code><p>
+                Last Updated: <code>@datetimeHuman($user->updated_at)</code><p>
+            </div>
+        </div>
+    </div>
+
     <div class="col-xs-12">
         <div class="box box-danger">
             <div class="box-header with-border">

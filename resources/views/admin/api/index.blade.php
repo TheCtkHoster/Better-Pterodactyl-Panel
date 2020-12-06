@@ -25,8 +25,8 @@
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
                         <tr>
-                            <th>Key</th>
-                            <th>Memo</th>
+                            <th>API Key</th>
+                            <th>Description</th>
                             <th>Last Used</th>
                             <th>Created</th>
                             <th></th>
